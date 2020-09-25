@@ -1,0 +1,1 @@
+{"query": "SELECT (Killed by) FROM 168 WHERE Death date = caesar", "table_id": "168", "nlu": "Who killed Caesar?"}
