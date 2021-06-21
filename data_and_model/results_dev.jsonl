@@ -1,0 +1,150 @@
+{"query": "SELECT (Time Zone) FROM 105 WHERE City = salt lake city", "table_id": "105", "nlu": "What is the time zone of Salt Lake City?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = caesar", "table_id": "168", "nlu": "Who killed Caesar?"}
+{"query": "SELECT max(firstAscentYear) FROM 120 WHERE country = germany", "table_id": "120", "nlu": "What is the highest mountain in Germany?"}
+{"query": "SELECT (start date) FROM 146 WHERE country = vietnam war", "table_id": "146", "nlu": "Which American presidents were in office during the Vietnam War?"}
+{"query": "SELECT (State) FROM 117 WHERE State = butch otter", "table_id": "117", "nlu": "Butch Otter is the governor of which U.S. state?"}
+{"query": "SELECT (gold Medalist) FROM 121 WHERE games = ", "table_id": "121", "nlu": "How many gold medals did Michael Phelps win at the 2008 Olympics?"}
+{"query": "SELECT (Birth Date) FROM 168 WHERE Name = rachel stevens", "table_id": "168", "nlu": "Which artists were born on the same date as Rachel Stevens?"}
+{"query": "SELECT (Profession) FROM 168 WHERE Name = frank herbert", "table_id": "168", "nlu": "What is the profession of Frank Herbert?"}
+{"query": "SELECT (instrument) FROM 118 WHERE instrument = taiko", "table_id": "118", "nlu": "Are Taiko some kind of Japanese musical instrument?"}
+{"query": "SELECT (Capacity) FROM 167 WHERE Name = fc porto", "table_id": "167", "nlu": "How many seats does the home stadium of FC Porto have?"}
+{"query": "SELECT count(frequent flyer program) FROM 102", "table_id": "102", "nlu": "Which frequent flyer program has the most airlines?"}
+{"query": "SELECT (Country) FROM 106 WHERE Country = european", "table_id": "106", "nlu": "Which European countries have a constitutional monarchy?"}
+{"query": "SELECT (Country) FROM 104 WHERE Enternace > two", "table_id": "104", "nlu": "Which countries have places with more than two caves?"}
+{"query": "SELECT (airport) FROM 108 WHERE  city = california", "table_id": "108", "nlu": "Which airports are located in California, USA?"}
+{"query": "SELECT (Nick Name) FROM 105 WHERE City = san francisco", "table_id": "105", "nlu": "What are the nicknames of San Francisco?"}
+{"query": "SELECT (Birth Name) FROM 168 WHERE Name = angela merkel", "table_id": "168", "nlu": "What is Angela Merkelâ€™s birth name?"}
+{"query": "SELECT (political party) FROM 101 WHERE city = berlin", "table_id": "101", "nlu": "Who is the mayor of Berlin?"}
+{"query": "SELECT (Country) FROM 106 WHERE Continent = euro", "table_id": "106", "nlu": "Which countries in the European Union adopted the Euro?"}
+{"query": "SELECT (Software) FROM 166 WHERE Software = mean hamster software", "table_id": "166", "nlu": "Which software has been published by Mean Hamster Software?"}
+{"query": "SELECT (Country) FROM 168 WHERE Name = bill gates", "table_id": "168", "nlu": "Which country was Bill Gates born in?"}
+{"query": "SELECT (Grand Children) FROM 168 WHERE Name = jacques cousteau", "table_id": "168", "nlu": "How many grand-children did Jacques Cousteau have?"}
+{"query": "SELECT (Name) FROM 168 WHERE Country = skateboarders from sweden AND Profession = professional skateboarders from sweden", "table_id": "168", "nlu": "Give me all professional skateboarders from Sweden."}
+{"query": "SELECT (Spouse) FROM 168 WHERE Country = german", "table_id": "168", "nlu": "Which monarchs of the United Kingdom were married to a German?"}
+{"query": "SELECT (movie) FROM 115 WHERE movie = argentine", "table_id": "115", "nlu": "Give me all Argentine films."}
+{"query": "SELECT (Death Cause) FROM 168 WHERE Name = michael jackson", "table_id": "168", "nlu": "How did Michael Jackson die?"}
+{"query": "SELECT max(State) FROM 127", "table_id": "127", "nlu": "Which U.S. state has been admitted latest?"}
+{"query": "SELECT (Class) FROM 109 WHERE Animal = millepede", "table_id": "109", "nlu": "Which classes does the Millepede belong to?"}
+{"query": "SELECT ( Home Page) FROM 114 WHERE Company = forbes", "table_id": "114", "nlu": "Give me the homepage of Forbes."}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = amanda palmer", "table_id": "168", "nlu": "Who is the husband of Amanda Palmer?"}
+{"query": "SELECT (Painting) FROM 122 WHERE Painting = storm on the sea of galilee", "table_id": "122", "nlu": "Who painted The Storm on the Sea of Galilee?"}
+{"query": "SELECT (Highest Place) FROM 123 WHERE Place = karakoram", "table_id": "123", "nlu": "What is the highest place of Karakoram?"}
+{"query": "SELECT (Date of Joining) FROM 106 WHERE Country = finland", "table_id": "106", "nlu": "When did Finland join the EU?"}
+{"query": "SELECT (Actors) FROM 165 WHERE Company = big bang theory", "table_id": "165", "nlu": "Which actors play in Big Bang Theory?"}
+{"query": "SELECT (Name) FROM 168 WHERE Profession = computer scientist AND Awards = computer scientist", "table_id": "168", "nlu": "Which computer scientist won an oscar?"}
+{"query": "SELECT (Writer) FROM 164 WHERE Book = harry potter", "table_id": "164", "nlu": "Who wrote Harry Potter?"}
+{"query": "SELECT (Writer) FROM 164 WHERE Award = nobel prize in literature", "table_id": "164", "nlu": "Give me all writers that won the Nobel Prize in literature."}
+{"query": "SELECT (Name) FROM 168 WHERE Country = lovesick AND Profession = ", "table_id": "168", "nlu": "Give me English actors starring in Lovesick."}
+{"query": "SELECT (Nick Name) FROM 105 WHERE City = baghdad", "table_id": "105", "nlu": "What is the nick name of Baghdad?"}
+{"query": "SELECT (start date) FROM 146 WHERE country = montenegro", "table_id": "146", "nlu": "In which city was the president of Montenegro born?"}
+{"query": "SELECT max(Population Density) FROM 105", "table_id": "105", "nlu": "Which U.S. state has the highest population density"}
+{"query": "SELECT max(length) FROM 125", "table_id": "125", "nlu": "What is the longest river in China?"}
+{"query": "SELECT (Area Code) FROM 105 WHERE City = berlin", "table_id": "105", "nlu": "What is the area code of Berlin?"}
+{"query": "SELECT (scientist) FROM 163 WHERE scientist = ivy league university", "table_id": "163", "nlu": "How many scientists graduated from an Ivy League university?"}
+{"query": "SELECT (Name) FROM 168 WHERE Birth Place = australia AND Profession = professional surfers", "table_id": "168", "nlu": "Which professional surfers were born in Australia?"}
+{"query": "SELECT (Party) FROM 124 WHERE Country = dutch", "table_id": "124", "nlu": "Give me all Dutch parties."}
+{"query": "SELECT (Moons) FROM 119 WHERE Planet = mars", "table_id": "119", "nlu": "How many moons does Mars have?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = batman", "table_id": "168", "nlu": "What is Batman's real name?"}
+{"query": "SELECT (Name) FROM 168 WHERE Famous For = elon musk", "table_id": "168", "nlu": "What is Elon Musk famous for?"}
+{"query": "SELECT (Author) FROM 111 WHERE Book = wikileaks", "table_id": "111", "nlu": "Who is the author of WikiLeaks?"}
+{"query": "SELECT (State) FROM 117 WHERE State = sean parnell", "table_id": "117", "nlu": "Sean Parnell was the governor of which U.S. state?"}
+{"query": "SELECT (Model) FROM 112 WHERE Model = ford model t", "table_id": "112", "nlu": "How many years was the Ford Model T manufactured?"}
+{"query": "SELECT (Death date) FROM 168 WHERE Name = carlo giuliani", "table_id": "168", "nlu": "When was Carlo Giuliani shot?"}
+{"query": "SELECT (Spcies) FROM 109 WHERE Animal = ", "table_id": "109", "nlu": "Give me all animals that are extinct."}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = lincoln", "table_id": "168", "nlu": "Who was the wife of President Lincoln?"}
+{"query": "SELECT (Awards) FROM 168 WHERE Name = bertrand russell", "table_id": "168", "nlu": "How many awards has Bertrand Russell?"}
+{"query": "SELECT ( Is Vegan) FROM 168 WHERE Name = pamela anderson", "table_id": "168", "nlu": "Is Pamela Anderson a vegan?"}
+{"query": "SELECT (misson) FROM 160 WHERE satellite = sun", "table_id": "160", "nlu": "Which space probes were sent into orbit around the sun?"}
+{"query": "SELECT (City) FROM 105 WHERE City = 250000 AND Country = 250000", "table_id": "105", "nlu": "Which German cities have more than 250000 inhabitants?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = robert kennedy", "table_id": "168", "nlu": "Who is the daughter of Robert Kennedy married to?"}
+{"query": "SELECT (Number of students) FROM 161 WHERE University = flew free university of amsterdam", "table_id": "161", "nlu": "How many students does the Free University of Amsterdam have?"}
+{"query": "SELECT (Revenue) FROM 114 WHERE Company = ibm", "table_id": "114", "nlu": "What is the revenue of IBM?"}
+{"query": "SELECT (movie) FROM 116 WHERE country = james bond", "table_id": "116", "nlu": "How many James Bond movies do exist?"}
+{"query": "SELECT (Voice Given By) FROM 145 WHERE Character = bart simpson", "table_id": "145", "nlu": "Who does the voice of Bart Simpson?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = tom hanks", "table_id": "168", "nlu": "Who was Tom Hanks married to?"}
+{"query": "SELECT (country) FROM 125 WHERE river = yenisei", "table_id": "125", "nlu": "Through which countries does the Yenisei river flow?"}
+{"query": "SELECT (Model) FROM 112 WHERE country = germany", "table_id": "112", "nlu": "Give me all cars that are produced in Germany."}
+{"query": "SELECT (Death date) FROM 168 WHERE Name = michael jackson", "table_id": "168", "nlu": "When did Michael Jackson die?"}
+{"query": "SELECT max(Volcano) FROM 159 WHERE Country = africa", "table_id": "159", "nlu": "What is the highest volcano in Africa?"}
+{"query": "SELECT max(Start date) FROM 149", "table_id": "149", "nlu": "Which poet wrote the most books?"}
+{"query": "SELECT (Name) FROM 168 WHERE Birth Place =  AND Profession = ", "table_id": "168", "nlu": "Give me all gangsters from the prohibition era."}
+{"query": "SELECT (misson) FROM 160 WHERE satellite = mars", "table_id": "160", "nlu": "Give me all spacecrafts that flew to Mars."}
+{"query": "SELECT (movie) FROM 115 WHERE movie = czech", "table_id": "115", "nlu": "Show me all Czech movies."}
+{"query": "SELECT (Misson) FROM 110 WHERE Programme = taikonauts", "table_id": "110", "nlu": "Give me all taikonauts"}
+{"query": "SELECT (Country) FROM 159 WHERE First Seen > ten", "table_id": "159", "nlu": "Which countries have more than ten volcanoes?"}
+{"query": "SELECT (movie) FROM 115 WHERE actor = tom cruise", "table_id": "115", "nlu": "Give me all movies with Tom Cruise."}
+{"query": "SELECT (Death date) FROM 168 WHERE Name = dracula", "table_id": "168", "nlu": "When did Dracula's creator die?"}
+{"query": "SELECT (Author) FROM 111 WHERE Book = english wikipedia", "table_id": "111", "nlu": "Who created English Wikipedia?"}
+{"query": "SELECT (Name) FROM 168 WHERE Profession = german chancellors", "table_id": "168", "nlu": "Give me all female German chancellors."}
+{"query": "SELECT (Founder) FROM 114 WHERE Company = aldi", "table_id": "114", "nlu": "Who owns Aldi?"}
+{"query": "SELECT (Book) FROM 111 WHERE Author = danielle steel", "table_id": "111", "nlu": "Which books were written by Danielle Steel?"}
+{"query": "SELECT (Influenced by) FROM 168 WHERE Name = socrates", "table_id": "168", "nlu": "Who was influenced by Socrates?"}
+{"query": "SELECT (Maximum Depth) FROM 132 WHERE Lake = lake chiemsee", "table_id": "132", "nlu": "How deep is Lake Chiemsee?"}
+{"query": "SELECT (Company) FROM 114 WHERE Industry = aerospace", "table_id": "114", "nlu": "Which companies work in the aerospace industry as well as in medicine?"}
+{"query": "SELECT (Name) FROM 168 WHERE Birth Place = philippines AND Profession = professional surfers", "table_id": "168", "nlu": "Which professional surfers were born on the Philippines?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = victoria", "table_id": "168", "nlu": "Who were the parents of Queen Victoria?"}
+{"query": "SELECT (castle) FROM 155 WHERE country = castles in the united states", "table_id": "155", "nlu": "Are there any castles in the United States?"}
+{"query": "SELECT (Languages) FROM 106 WHERE Country = estonia", "table_id": "106", "nlu": "Which languages are spoken in Estonia?"}
+{"query": "SELECT (bird) FROM 157 WHERE family = critically", "table_id": "157", "nlu": "Give me a list of all critically endangered birds."}
+{"query": "SELECT (country) FROM 125 WHERE river = rhine", "table_id": "125", "nlu": "Which countries are connected by the Rhine?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = elizabeth ii", "table_id": "168", "nlu": "Who was the father of Queen Elizabeth II?"}
+{"query": "SELECT (chemical element) FROM 147 WHERE chemical substance = ", "table_id": "147", "nlu": "Give me all chemical elements."}
+{"query": "SELECT (start date) FROM 146 WHERE end state < 20", "table_id": "146", "nlu": "Give me all American presidents of the last 20 years."}
+{"query": "SELECT (release date) FROM 115 WHERE director =  AND actor = netherlands", "table_id": "115", "nlu": "When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = lance bass", "table_id": "168", "nlu": "Whom did Lance Bass marry?"}
+{"query": "SELECT ( subsidiary) FROM 102 WHERE airline = tui travel serves both glasgow and dublin AND serves = glasgow and dublin", "table_id": "102", "nlu": "Which subsidiary of TUI Travel serves both Glasgow and Dublin?"}
+{"query": "SELECT count(Languages) FROM 106", "table_id": "106", "nlu": "What languages are spoken in Pakistan?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = bill clinton", "table_id": "168", "nlu": "Who is the daughter of Bill Clinton married to?"}
+{"query": "SELECT (Misson) FROM 110 WHERE Programme = apollo 11", "table_id": "110", "nlu": "Who was on the Apollo 11 mission?"}
+{"query": "SELECT (wavelength) FROM 156 WHERE Color = indigo", "table_id": "156", "nlu": "What is the wavelength of Indigo?"}
+{"query": "SELECT (B-side) FROM 143 WHERE artist = ramones", "table_id": "143", "nlu": "Give me all B-sides of the Ramones."}
+{"query": "SELECT (Name) FROM 168 WHERE Name = scarface", "table_id": "168", "nlu": "Who was called Scarface?"}
+{"query": "SELECT (river) FROM 125 WHERE river mouth = north sea", "table_id": "125", "nlu": "Which rivers flow into the North Sea?"}
+{"query": "SELECT (location) FROM 154 WHERE fort = fort knox", "table_id": "154", "nlu": "Where is Fort Knox located?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = british earls", "table_id": "168", "nlu": "Which daughters of British earls died at the same place they were born at?"}
+{"query": "SELECT count(emperors) FROM 153 WHERE country = china", "table_id": "153", "nlu": "How many emperors did China have?"}
+{"query": "SELECT (Show) FROM 145 WHERE Show = teenage mutant ninja turtles", "table_id": "145", "nlu": "What are the names of the Teenage Mutant Ninja Turtles?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = piccadilly", "table_id": "168", "nlu": "Where does Piccadilly start?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = obama", "table_id": "168", "nlu": "What is the name of the university where Obama's wife studied?"}
+{"query": "SELECT (Independence Date) FROM 106 WHERE Country = paraguay", "table_id": "106", "nlu": "When did Paraguay proclaim its independence?"}
+{"query": "SELECT max(Height) FROM 152 WHERE Name > nba", "table_id": "152", "nlu": "How short is the shortest active NBA player?"}
+{"query": "SELECT (Death Place) FROM 168 WHERE Name = abraham lincoln", "table_id": "168", "nlu": "Where did Abraham Lincoln die?"}
+{"query": "SELECT (Founding date) FROM 114 WHERE Company = jack wolfskin", "table_id": "114", "nlu": "When was Jack Wolfskin founded?"}
+{"query": "SELECT (headquarter) FROM 102 WHERE airline = air china", "table_id": "102", "nlu": "In which city is the headquarter of Air China?"}
+{"query": "SELECT (Founding Year) FROM 136 WHERE Brewery = pilsner urquell", "table_id": "136", "nlu": "What is the founding year of the brewery that produces Pilsner Urquell?"}
+{"query": "SELECT (date) FROM 151 WHERE date = boston tea party", "table_id": "151", "nlu": "When did the Boston Tea Party take place?"}
+{"query": "SELECT (Spcies) FROM 109", "table_id": "109", "nlu": "Which animals are critically endangered?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Country =  AND Profession = ", "table_id": "168", "nlu": "Which politicians were married to a German?"}
+{"query": "SELECT max(diameter) FROM 150", "table_id": "150", "nlu": "How big is the earth's diameter?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = obama", "table_id": "168", "nlu": "Is the wife of President Obama called Michelle?"}
+{"query": "SELECT (State) FROM 127 WHERE State = mn", "table_id": "127", "nlu": "Which U.S. state has the abbreviation MN?"}
+{"query": "SELECT (Death date) FROM 168 WHERE Name = muhammad", "table_id": "168", "nlu": "When did Muhammad die?"}
+{"query": "SELECT (atmosphere) FROM 142 WHERE Planet = moon", "table_id": "142", "nlu": "What is the atmosphere of the Moon composed of?"}
+{"query": "SELECT (Governor) FROM 117 WHERE State = texas", "table_id": "117", "nlu": "Who is the governor of Texas?"}
+{"query": "SELECT (movie) FROM 115 WHERE director = kurosawa", "table_id": "115", "nlu": "Which movies did Kurosawa direct?"}
+{"query": "SELECT (Battle) FROM 141 WHERE city = 1836", "table_id": "141", "nlu": "What was the name of the famous battle in 1836 in San Antonio?"}
+{"query": "SELECT (Show) FROM 140 WHERE Show = charmed", "table_id": "140", "nlu": "Give me the official websites of actors of the television show Charmed."}
+{"query": "SELECT (Calories) FROM 139 WHERE Food = baguette", "table_id": "139", "nlu": "How many calories does a baguette have?"}
+{"query": "SELECT (Library) FROM 138 WHERE Estblishment < 1400", "table_id": "138", "nlu": "Give me all libraries established before 1400."}
+{"query": "SELECT (Island) FROM 144 WHERE Country = netherlands", "table_id": "144", "nlu": "Give me all Frisian islands that belong to the Netherlands."}
+{"query": "SELECT (museum) FROM 137 WHERE museum = scream by in munch", "table_id": "137", "nlu": "Which museum exhibits The Scream by Munch?"}
+{"query": "SELECT (Founding date) FROM 114 WHERE Company = de beers", "table_id": "114", "nlu": "When was the De Beers company founded?"}
+{"query": "SELECT (start date) FROM 146 WHERE end state > jfk", "table_id": "146", "nlu": "Who became president after JFK died?"}
+{"query": "SELECT (Spouse) FROM 168 WHERE Name = juan carlos i", "table_id": "168", "nlu": "Who are the parents of the wife of Juan Carlos I?"}
+{"query": "SELECT ( author) FROM 129 WHERE book = song of ice and fire", "table_id": "129", "nlu": "Who is the novelist of the work a song of ice and fire?"}
+{"query": "SELECT (album ) FROM 143 WHERE artist = beatles", "table_id": "143", "nlu": "In which studio did the Beatles record their first album?"}
+{"query": "SELECT (Brewery) FROM 136 WHERE Location = north-rhine westphalia", "table_id": "136", "nlu": "Which beer brewing companies are located in North-Rhine Westphalia?"}
+{"query": "SELECT (Death date) FROM 168 WHERE Name = abraham lincoln", "table_id": "168", "nlu": "When did princess Diana die?"}
+{"query": "SELECT (Founder) FROM 114 WHERE Company = intel", "table_id": "114", "nlu": "Who founded Intel?"}
+{"query": "SELECT (birth date) FROM 135 WHERE Name > premier league", "table_id": "135", "nlu": "Who is the youngest player in the Premier League?"}
+{"query": "SELECT (Instruments) FROM 133 WHERE Instruments = cat stevens", "table_id": "133", "nlu": "Which instruments does Cat Stevens play?"}
+{"query": "SELECT (Lake) FROM 132 WHERE Lake = south carolina", "table_id": "132", "nlu": "How many rivers and lakes are in South Carolina?"}
+{"query": "SELECT (Name) FROM 168 WHERE Name = rodzilla", "table_id": "168", "nlu": "Who was called Rodzilla?"}
+{"query": "SELECT (Country) FROM 106 WHERE Country = africa", "table_id": "106", "nlu": "Give me the capitals of all countries in Africa."}
+{"query": "SELECT (Type) FROM 131 WHERE Bridge > manhattan bridge", "table_id": "131", "nlu": "Which bridges are of the same type as the Manhattan Bridge?"}
+{"query": "SELECT (Company) FROM 114 WHERE Company = facebook", "table_id": "114", "nlu": "How many companies were founded by the founder of Facebook?"}
+{"query": "SELECT (Foundation Place) FROM 114 WHERE Foundation Place = grand canyon", "table_id": "114", "nlu": "Show me hiking trails in the Grand Canyon where there's no danger of flash floods."}
+{"query": "SELECT max( pages) FROM 129", "table_id": "129", "nlu": "Which book has the most pages?"}
+{"query": "SELECT max(State) FROM 127", "table_id": "127", "nlu": "What is the largest state in the United States?"}
+{"query": "SELECT (Company) FROM 114 WHERE Foundation Place = 500000", "table_id": "114", "nlu": "Give me the websites of companies with more than 500000 employees."}
+{"query": "SELECT (Ship) FROM 128 WHERE Ship Namesake = columbus", "table_id": "128", "nlu": "What were the names of the three ships by Columbus?"}
