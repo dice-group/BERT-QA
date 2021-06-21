@@ -1,0 +1,408 @@
+?uri publisher GMT_Games 
+#ent developer ?uri. 
+?uri type Person ; birthPlace #ent. 
+#ent location ?uri . ?uri country United_States. 
+#ent leaderName ?uri 
+?cave type Cave ; location ?uri . ?uri type Country 
+#ent deathPlace ?uri. 
+#ent targetAirport ?uri 
+?x director #ent ; starring #ent
+#ent officialLanguage ?uri 
+?uri type Film ; country Denmark 
+?uri type Film ; starring #ent ; director #ent 
+#ent child ?child . ?child children ?uri 
+?uri type Weapon ; designer ?x . #ent designer ?x FILTER ( ?uri != #ent ) 
+#ent owner ?uri 
+?uri type http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates ; densityrank ?rank 
+?uri type Monarch ; spouse ?spouse
+?uri type Organisation
+#ent creator ?uri 
+?uri mission #ent 
+#ent author ?uri 
+?uri densityrank ?density 
+?uri launchPad Baikonur_Cosmodrome 
+?uri occupation #ent ; instrument #ent 
+#ent timezone ?x . ?uri type http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates ; timezone ?x FILTER ( ?uri != #ent ) 
+?uri type http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates ; mineral ?mineral FILTER regex(?mineral, "gold", "i") 
+#ent child ?child . ?child spouse ?uri 
+Lake_Placid_(Texas) maximumDepth ?n 
+?uri a Museum ; location #ent 
+?uri a Cave ; entranceCount ?entrance FILTER ( ?entrance  3 ) 
+?uri team #ent ; height ?h 
+?uri http://purl.org/dc/terms/subject Category:Action_role-playing_video_games ; ign ?score 
+?uri a Writer ; award #ent 
+?uri a BasketballPlayer ; height ?n FILTER ( ?n  2.0 ) 
+#ent beginningDate ?date 
+#ent borderingstates ?uri 
+#ent developer ?uri 
+#ent deathPlace ?uri 
+?uri a Film ; starring #ent 
+?uri a Swimmer ; birthPlace #ent 
+?uri a Astronaut
+?uri type #ent
+?uri a President ; birthDate ?date FILTER regex(?date, "^1945") 
+#ent genre ?uri 
+Boston_Red_Sox ballpark ?uri 
+?uri a SoccerClub ; league #ent 
+?uri a Volcano ; locatedInArea #ent ; eruptionYear ?date FILTER ( year(?date) = 2000 ) 
+?uri a Bridge ; crosses #ent 
+#ent officialSchoolColour ?string 
+?uri producer #ent 
+?uri a Film ; country Denmark 
+?uri deathCause ?x . 
+?uri a BasketballPlayer ; birthDate ?date ; highlights ?h FILTER regex(?h, "MVP") 
+?uri a Company
+#ent country ?country . ?country capital ?uri 
+?uri director #ent . 
+?uri a River . ?x inflow ?uri ; a Lake ; country #ent 
+?uri a Airline 
+?uri a Island ; country #ent 
+#ent populationTotal ?num 
+?uri mission #ent 
+?uri a Company
+?uri a Film ; starring #ent ; director #ent 
+?uri a SoccerClub ; league #ent 
+Ural_Mountains highest ?uri 
+#ent governor ?uri 
+#ent architect ?x . ?x almaMater ?uri 
+?uri type WorldHeritageSite .
+?uri type Actor . ?uri birthPlace #ent . ?uri birthDate ?date . FILTER ( ?date = xsd:dateTime('1950-12-31T00:00:00Z')) 
+?uri starring Elizabeth_Taylor ; starring #ent 
+?uri type #ent
+Pope_John_Paul_II successor ?uri 
+?uri a Astronaut ; type European_Space_Agency 
+?uri title #ent ; years 1978 
+Rolls-Royce_Motors owner ?uri 
+?uri a Museum ; location #ent 
+John_F._Kennedy deathPlace ?uri 
+?uri a Person
+?uri a Person
+?uri type #ent ; origin Beer_in_Ireland 
+#ent country ?uri 
+?uri a Actor
+#ent carbs ?carbs 
+?film type Film . ?film producer ?uri . 
+#ent numberOfEmployees ?num 
+?uri a Actor ; birthPlace #ent 
+#ent creator ?uri 
+?single album ?uri ; http://www.w3.org/2000/01/rdf-schema#label "Last Christmas"@en 
+#ent admittancedate ?date 
+?uri programme #ent 
+?uri a TelevisionShow ; starring #ent 
+#ent founded ?date 
+Apple_Inc. netIncome ?ni 
+?uri a Holiday ; country Sweden 
+Juliana_of_the_Netherlands burialPlace ?uri . ?uri a Settlement 
+?uri a Musical ; musicBy #ent 
+?uri a Company
+#ent largestmetro ?uri 
+?uri a Person ; conviction Death_of_John_Lennon 
+?uri a Writer
+?uri a Band ; genre #ent
+?uri a Country
+?uri a http://dbpedia.org/class/yago/WikicatEatingDisorders 
+#ent ethnicity "Jewish"@en 
+Brazil_national_football_team fifaMin ?n 
+?uri a Film ; starring #ent 
+#ent profession #ent 
+#ent timezone ?x . ?uri a http://dbpedia.org/class/yago/WikicatStatesOfTheUnitedStates ; timezone ?x FILTER ( ?uri != #ent ) 
+?uri a Book ; author #ent 
+?uri type Country . ?uri officialLanguages ?language . 
+New_York_City_Fire_Department employees ?num 
+#ent portrayer ?uri 
+?uri a Library ; established ?year FILTER ( ?year  1400 ) 
+?uri a ProgrammingLanguage
+#ent dbo:wikiPageRedirects ?x . ?x locatedInArea ?uri. ?uri rdf:type yago:WikicatStatesOfTheUnitedStates 
+?uri a Airline
+?uri shipNamesake #ent 
+?uri a Politician ; religion #ent 
+?books author John_Green_(author) 
+?uri a Mountain ; elevation ?elevation 
+?uri occupation #ent . ?x author ?uri . ?x type Book . 
+?uri a ProgrammingLanguage ; influenced #ent 
+?uri occupation #ent . ?x author ?uri . ?x type Book . 
+?uri director #ent ; starring #ent 
+?uri a Software . ?company a Company . ?uri developer ?company . ?company foundationPlace #ent 
+#ent instrument ?uri 
+?uri a Airline ; alliance #ent 
+?uri foaf:surname 'Baldwin'@en .
+#ent author ?uri 
+?x type Album ; artist Elvis_Presley ; releaseDate ?y ; recordLabel ?uri 
+#ent starring #ent 
+#ent residence ?uri 
+?uri type Actor . ?f type Film . ?f starring ?uri . 
+?uri a Country ; officialLanguage ?language 
+?uri a Country . ?cave a Cave
+?uri type Song . ?uri artist #ent . ?uri releaseDate ?date . FILTER (?date = '1980-01-01'^^xsd:date && ?date = '1990-12-31'^^xsd:date) 
+?uri a TelevisionShow ; creator #ent 
+#ent accessioneudate ?date 
+?uri a SoccerPlayer ; birthPlace #ent 
+?uri profession #ent ; almaMater #ent 
+#ent starring ?actor . ?actor birthDate ?date 
+?uri a Organisation
+
+#ent children ?n 
+?uri a Building ; architecturalStyle English_Gothic_architecture ; location #ent 
+Real_Madrid_C.F. manager ?uri 
+?uri currency #ent 
+?uri type Holiday 
+?uri a River
+?uri a Organisation
+#ent birthName ?string 
+?uri spouse #ent 
+?uri a Weapon ; designer #ent 
+?m http://www.w3.org/2004/02/skos/core#broader Category:Cities_in_Germany . ?city http://purl.org/dc/terms/subject ?m ; areaTotal ?area 
+#ent leaderParty ?uri 
+?uri satelliteOf #ent ; mass ?n 
+#ent numberOfEmployees ?number 
+?uri series #ent ; seasonNumber 1 
+?uri abbreviation "ICRO" 
+Battlestar_Galactica_%281978_TV_series%29 numberOfEpisodes ?x . Battlestar_Galactica_%282004_TV_series%29 numberOfEpisodes ?y FILTER ( ?y  ?x ) 
+?uri a Film ; producer #ent 
+#ent portrayer ?uri 
+?uri a PoliticalParty ; country #ent ; ideology Pro-Europeanism 
+?uri occupation #ent ; instrument #ent 
+?uri a Mountain ; elevation ?elevation 
+#ent largestCity ?large ; capital ?capital FILTER ( ?large = ?capital ) 
+?uri a Rocket ; launchSite Baikonur_Cosmodrome 
+?uri a ProgrammingLanguage 
+?uri a ChessPlayer ; birthPlace ?x ; deathPlace ?y FILTER ( ?x = ?y ) 
+#ent foundedBy ?uri 
+?uri a Film ; starring #ent 
+#ent location ?uri . ?uri country United_States 
+?uri type City ; isPartOf #ent ; populationTotal ?inhabitants FILTER ( ?inhabitants  100000 ) 
+#ent elevation ?elevation . ?uri a Mountain
+?x musicalArtist #ent ; bSide ?string 
+#ent speciality ?uri 
+#ent deathDate ?date 
+?uri title #ent 
+?uri birthPlace #ent ; deathPlace #ent 
+#ent child Luke_Skywalker 
+?uri a Brewery
+?uri type Film . ?uri director #ent . ?uri budget ?b . FILTER( xsd:double(?b) = 8.0E7 ) 
+?uri a SoccerClub
+?film a Film ; starring #ent ; producer ?uri 
+?uri breed #ent 
+?uri a Person ; weight ?num
+?uri spokenIn #ent 
+?uri type Country ; areaTotal ?n 
+United_States largestCity ?lcity 
+?uri type Pope . Vatican_Television_Center foundedBy ?uri 
+Ceres_(dwarf_planet) discoverer ?uri 
+#ent leader ?uri . ?uri type Royalty 
+#ent type Beverage 
+#ent almaMater ?Almamater 
+The_Pillars_of_the_Earth author ?uri 
+#ent targetAirport ?uri 
+Johann_Wolfgang_von_Goethe birthPlace ?Goethe 
+#ent date ?x . #ent date ?y FILTER ( ?x  ?y ) 
+#ent ingredient ?uri 
+#ent author ?uri 
+?m mountainRange Ore_Mountains ; elevation ?height 
+Federal_Ministry_of_Finance_(Germany) leader ?leader 
+#ent country ?uri 
+#ent portrayer ?uri 
+#ent sourceCountry ?uri 
+Pennsylvania_State_University state ?s 
+?uri type Stadium ; location #ent ; seatingCapacity ?n 
+?x city #ent ; league Turkish_Ice_Hockey_First_League ; coach ?uri 
+United_Kingdom areaTotal ?area 
+#ent creator ?uri 
+#ent spouse ?uri 
+#ent developer ?uri 
+?uri type Film ; director #ent 
+Hylidae class #ent 
+Palace_of_Westminster location ?uri 
+#ent elevation ?ele 
+#ent populationTotal ?Mexico_City 
+#ent foundingDate ?ff 
+?uri type Royalty ; type http://dbpedia.org/class/yago/WikicatEnglishMonarchs ; activeYearsStartYear ?date 
+#ent editor ?uri 
+#ent award ?uri 
+?uri type DartsPlayer ; birthDate ?date 
+#ent type Sport 
+#ent crosses ?uri 
+#ent populationTotal ?uri 
+#ent completionDate ?date 
+Barack_Obama spouse ?spouse . ?spouse http://www.w3.org/2000/01/rdf-schema#label ?name FILTER regex(?name, "Michelle") 
+8th_President_of_the_United_States wikiPageRedirects ?link . ?link name ?name 
+#ent populationTotal ?europop 
+?uri type LaunchPad ; operator #ent 
+#ent developer ?uri 
+#ent birthName ?bn 
+#ent populationTotal ?pop 
+OPTIONAL
+
+#ent city ?city ; country ?country 
+#ent author ?Author 
+William_Shakespeare deathDate ?x 
+?uri product Slack_(software) 
+#ent origin ?uri
+#ent birthYear ?uri 
+#ent spouse ?uri 
+Abraham_Lincoln spouse ?spouse . ?spouse http://www.w3.org/2000/01/rdf-schema#label ?name FILTER regex(?name, "Mary") 
+#ent city ?uri 
+#ent programmingLanguage ?uri 
+#ent almaMater ?university 
+?uri type Musical ; musicBy #ent 
+#ent numberOfLocations ?number 
+?uri type BodyOfWater ; length ?length 
+#ent birthDate ?date 
+?uri type Company ; product #ent 
+Abraham_Lincoln spouse ?uri 
+#ent species ?species 
+#ent capital ?x . ?x populationTotal ?num 
+?uri currency #ent 
+#ent knownFor ?uri 
+Titanic_(1997_film) musicComposer ?uri 
+#ent runtime ?runtime 
+Geography_of_Iran borders ?border 
+?uri type Company ; industry #ent ; foundationPlace #ent 
+#ent successor ?uri 
+#ent mayor ?uri 
+#ent almaMater ?x . ?x type University 
+#ent spouse ?uri 
+?x inflow #ent ; type Lake 
+?uri type Company ; location #ent ; numberOfEmployees ?n 
+#ent vicePresident ?uri 
+#ent creator ?x . ?x nationality ?uri 
+#ent manufacturer ?x . ?x locationCity ?uri 
+#ent party Democratic_Party_(United_States) 
+#ent child ?uri 
+#ent wineRegion ?uri 
+#ent areaTotal ?tarea 
+?uri type City ; populationTotal ?pop 
+?owner owner #ent 
+2018_FIFA_World_Cup date ?Date 
+?uri director #ent 
+#ent populationTotal ?pIraq 
+#ent largestCity ?city . ?city populationTotal ?num 
+#ent capital ?x . ?x mayor ?uri 
+?x director #ent ; starring ?uri 
+#ent height ?height 
+#ent populationDensityRank ?rank 
+?uri type Mountain ; locatedInArea #ent ; elevation ?num 
+?uri publisher GMT_Games 
+#ent officialLanguage ?uri 
+#ent deathPlace ?uri . ?uri type Town 
+#ent ingredient ?uri 
+#ent country ?uri 
+?uri type VideoGame ; publisher #ent 
+#ent bandMember ?uri 
+#ent timeZone ?uri 
+Colombo_Lighthouse height ?num 
+#ent writer ?writers 
+#ent leaderName ?uri 
+#ent largestCity ?uri 
+Jacques_Chirac spouse ?uri 
+#ent governmentType ?uri 
+#ent height ?num 
+?uri type Holiday 
+?uri type BasketballPlayer ; height ?num 
+#ent language ?x 
+#ent child ?uri 
+Aki_Kaurismki award Grand_Prix_(Cannes_Film_Festival) 
+#ent mayor ?x . ?x party ?uri 
+?uri type FormulaOneRacer ; races ?x 
+#ent foundationPlace ?uri 
+#ent birthPlace ?place 
+#ent starring #ent 
+?uri parent #ent ; parent Sonny_Bono 
+#ent ethnicGroup ?uri 
+#ent capital ?uri 
+#ent birthPlace ?city . ?city country #ent 
+#ent numberOfPages ?n 
+#ent child ?uri . ?uri birthDate ?d 
+?uri type TelevisionShow ; creator #ent 
+?uri abbreviation "IYCM" 
+Oregon_wine growingGrape ?uri 
+Andrew_Jackson battle ?battle 
+#ent completionDate ?date 
+Nikola_Tesla award #ent 
+?uri type States_of_Mexico 
+?uri knownFor #ent ; type Scientist ; knownFor #ent 
+#ent budget ?n 
+#ent musicComposer ?uri 
+?uri series #ent ; seasonNumber 1 
+?uri type City ; populationTotal ?pop 
+#ent restingPlace ?uri 
+#ent team Real_Madrid_C.F. 
+#ent author ?uri 
+Prince_William,_Duke_of_Cambridge parent ?x . #ent parent ?x 
+#ent doctoralAdvisor ?uri 
+#ent numberOfEpisodes ?x . #ent numberOfEpisodes ?y FILTER ( ?y  ?x ) 
+?uri influenced #ent 
+#ent floorCount ?burj . ?uri type Building ; floorCount ?proj FILTER ( ?proj  ?burj ) 
+?uri isPartOfMilitaryConflict #ent ; result ?result ; date ?date 
+#ent budget ?n 
+#ent type Protein 
+#ent languageFamily ?uri . Persian_language languageFamily ?uri 
+?film type Film ; country Spain ; producer #ent ; starring ?uri . ?uri type Person 
+#ent areaTotal ?a1 . #ent areaTotal ?a2 FILTER ( ?a1  ?a2 ) 
+?uri series #ent 
+Johann_Sebastian_Bach birthPlace ?uri 
+?uri type Rapid_transit ; openingYear ?date ; location ?loc . ?loc type City 
+#ent architect ?uri 
+#ent populationTotal ?population 
+#ent presenter ?uri 
+#ent populationTotal ?uri 
+#ent locatedInArea ?uri . ?uri type Country 
+#ent author ?person . ?person movement ?uri 
+#ent date ?d 
+?uri type Bridge ; mainspan ?s 
+?uri type VideoGame ; http://www.w3.org/2000/01/rdf-schema#label "Battle Chess"@en 
+?uri restingPlace #ent 
+?uri assembly #ent ; manufacturer #ent 
+#ent influencedBy #ent 
+#ent child ?uri 
+#ent height ?num 
+Secret_Intelligence_Service headquarter ?uri . ?uri country United_Kingdom 
+#ent creator ?uri 
+#ent routeEnd ?uri 
+#ent child ?child . ?child child ?uri 
+#ent dissolutionDate ?date 
+T._E._Lawrence battle ?uri 
+#ent timeZone ?uri 
+?uri type Book ; author #ent ; numberOfPages ?x FILTER ( ?x  300 ) 
+#ent deathCause ?uri 
+#ent subsidiary ?uri . ?uri targetAirport Dortmund_Airport ; targetAirport Berlin_Tegel_Airport 
+#ent deathPlace ?p . ?p website ?w 
+#ent child ?uri 
+#ent spouse #ent 
+?uri type City . #ent residence ?uri 
+?uri type Book ; publisher #ent ; author Jack_Kerouac 
+#ent writer ?uri 
+#ent capital ?uri 
+#ent leaderName ?uri 
+#ent governmentType ?uri 
+?uri type Book ; author #ent 
+#ent firstAscentPerson ?uri 
+?uri type Language . #ent language ?uri 
+#ent currency ?uri 
+?uri wineProduced #ent ; location #ent 
+#ent activeYearsEndDate ?d 
+?uri type Film ; starring #ent ; director #ent 
+?uri type Film ; starring #ent ; starring #ent 
+?uri author Ernest_Hemingway ; literaryGenre #ent 
+#ent height ?height 
+?uri governmentType Borough_(New_York_City) 
+?uri type RecordLabel ; genre #ent ; country #ent 
+#ent sourceCountry ?uri 
+#ent founder ?uri 
+#ent composer ?uri 
+#ent leader ?uri ; leaderTitle "President"@en 
+#ent deathPlace ?uri . ?uri type City 
+?uri type Mountain ; locatedInArea #ent ; elevation ?elevation 
+#ent editor ?uri 
+#ent currency ?uri 
+?uri field Oceanography ; birthPlace Sweden 
+#ent location ?uri . ?uri type City 
+#ent spouse #ent 
+?uri type Country ; language Japanese_language 
+?uri director #ent ; budget ?b 
+?uri type Museum ; location New_York_City ; numberOfVisitors ?num 
+?uri type Album ; artist Queen_(band) ; releaseDate ?d 
+#ent alias ?name 
+?uri type Film ; starring #ent ; releaseDate ?date 
+#ent starring ?uri 
+#ent discoverer ?uri 

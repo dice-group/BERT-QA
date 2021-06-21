@@ -1,0 +1,75 @@
+{
+	"dataset": {
+		"id": "qald-7-train-multilingual"
+	},
+	"questions": [
+	{
+    "id" : "129",
+    "answertype" : "resource",
+    "aggregation" : false,
+    "onlydbo" : true,
+    "hybrid" : false,
+    "question" : [ {
+      "language" : "de",
+      "string" : "Wer spricht Bart Simpson?",
+      "keywords" : "Bart Simpson,  Sprecher"
+    }, {
+      "language" : "ru",
+      "string" : "Кто делает  голос из Барт Симпсон? ",
+      "keywords" : "голос ,   Барт Симпсон "
+    }, {
+      "language" : "pt",
+      "string" : "Quem faz a voz do Bart Simpson? ",
+      "keywords" : "voz ,   Bart Simpson "
+    }, {
+      "language" : "hi_IN",
+      "string" : "बार्ट सिम्पसन की आवाज़ कौन है?",
+      "keywords" : "आवाज़ ,   बार्ट सिम्पसन "
+    }, {
+      "language" : "en",
+      "string" : "What is the time zone of Salt Lake City?",
+      "keywords" : "voice,  Bart Simpson"
+    }, {
+      "language" : "fa",
+      "string" : "چه کسی بارت سیمپسون را دوبله کرده است؟",
+      "keywords" : "بارت سیمپسون، دوبله"
+    }, {
+      "language" : "it",
+      "string" : "Chi interpreta la voce di Bart Simpson?",
+      "keywords" : "interpretare,  voce,  Bart Simpson"
+    }, {
+      "language" : "fr",
+      "string" : "Qui est la voix de Bart Simpson?",
+      "keywords" : "voix,  Bart Simpson"
+    }, {
+      "language" : "ro",
+      "string" : "Cine interpretează vocea lui Bart Simpson?",
+      "keywords" : "voce,  Bart Simpson"
+    }, {
+      "language" : "es",
+      "string" : "¿Quién interpreta la voz de Bart Simpson?",
+      "keywords" : "interprete,  voz,  Bart Simpson"
+    }, {
+      "language" : "nl",
+      "string" : "Wie spreekt de stem van Bart Simpson?",
+      "keywords" : "Bart Simpson,  stem"
+    } ],
+    "query" : {
+      "sparql" : "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/Bart_Simpson> <http://dbpedia.org/property/voiceactor> ?uri }"
+    },
+    "answers" : [ {
+      "head" : {
+        "vars" : [ "uri" ]
+      },
+      "results" : {
+        "bindings" : [ {
+          "uri" : {
+            "type" : "uri",
+            "value" : "http://dbpedia.org/resource/Nancy_Cartwright"
+          }
+        } ]
+      }
+    } ]
+  }
+  ]
+  }

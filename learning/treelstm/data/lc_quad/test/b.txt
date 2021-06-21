@@ -1,0 +1,97 @@
+?u_0 region #ent
+?u_1 language ?u_0
+Nebraska language ?u_0
+?u_0 language ?u_1
+?u_0 region ?u_1
+?u_1 region ?u_0
+?u_1 region Nebraska
+Nebraska language ?u_1
+#ent almaMater ?u_0
+?u_0 coach #ent
+?u_1 team ?u_0
+?u_0 coach Fred_Hoiberg .?u_1 team ?u_0
+?u_0 team ?u_1
+?u_0 coach Fred_Hoiberg .?u_0 team ?u_1
+?u_1 coach Fred_Hoiberg
+?u_1 coach Fred_Hoiberg .?u_1 team ?u_0
+?u_1 coach Fred_Hoiberg .?u_0 team ?u_1
+Callisto_(moon) discoverer ?u_0
+#ent leaderName ?u_0
+#ent mouthMountain #ent
+?u_1 part New_Braunfels,_Texas
+?u_1 part ?u_0
+?u_0 type Settlement
+?u_1 part New_Braunfels,_Texas .?u_1 part ?u_0
+?u_1 part New_Braunfels,_Texas .?u_0 type Settlement
+?u_1 part ?u_0 .?u_1 part ?u_0
+?u_1 part ?u_0 .?u_0 type Settlement
+?u_1 part New_Braunfels,_Texas .?u_1 part ?u_0 .?u_1 part ?u_0
+?u_1 part New_Braunfels,_Texas .?u_1 part ?u_0 .?u_0 type Settlement
+?u_1 part ?u_0 .?u_1 part ?u_0 .?u_0 type Settlement
+?u_1 part New_Braunfels,_Texas .?u_1 part ?u_0 .?u_1 part ?u_0 .?u_0 type Settlement
+?u_0 part New_Braunfels,_Texas
+?u_1 type Settlement
+?u_0 part New_Braunfels,_Texas .?u_1 type Settlement
+?u_1 part ?u_0 .?u_1 type Settlement
+?u_1 part ?u_0 .?u_1 part ?u_0 .?u_1 type Settlement
+?u_0 part New_Braunfels,_Texas .?u_0 type Settlement
+?u_1 part New_Braunfels,_Texas .?u_1 type Settlement
+?u_1 part New_Braunfels,_Texas .?u_1 part ?u_0 .?u_1 type Settlement
+?u_1 part New_Braunfels,_Texas .?u_1 part ?u_0 .?u_1 part ?u_0 .?u_1 type Settlement
+?u_0 part ?u_1
+?u_1 part ?u_0 .?u_0 part ?u_1
+?u_0 part ?u_1 .?u_0 type Settlement
+?u_1 part ?u_0 .?u_0 part ?u_1 .?u_0 type Settlement
+?u_0 part New_Braunfels,_Texas .?u_0 part ?u_1
+?u_0 part ?u_1 .?u_1 type Settlement
+?u_0 part New_Braunfels,_Texas .?u_0 part ?u_1 .?u_1 type Settlement
+?u_1 part ?u_0 .?u_0 part ?u_1 .?u_1 type Settlement
+?u_0 part New_Braunfels,_Texas .?u_0 part ?u_1 .?u_0 type Settlement
+?u_0 birthPlace #ent
+?u_0 creator England
+?u_0 type TelevisionShow
+?u_0 creator England .?u_0 type TelevisionShow
+?u_1 birthPlace England
+?u_1 creator ?u_0
+?u_0 type TelevisionShow
+?u_1 creator ?u_0 .?u_0 type TelevisionShow
+?u_0 birthPlace England
+?u_1 type TelevisionShow
+?u_0 birthPlace England .?u_1 creator ?u_0
+?u_1 creator ?u_0 .?u_1 type TelevisionShow
+?u_0 birthPlace England .?u_1 creator ?u_0 .?u_1 type TelevisionShow
+?u_0 creator ?u_1
+?u_1 birthPlace England .?u_0 creator ?u_1
+?u_0 creator ?u_1 .?u_0 type TelevisionShow
+?u_1 birthPlace England .?u_0 creator ?u_1 .?u_0 type TelevisionShow
+?u_0 creator ?u_1 .?u_1 type TelevisionShow
+?u_1 creator England
+?u_1 birthPlace ?u_0
+?u_1 creator England .?u_0 type TelevisionShow
+?u_1 birthPlace ?u_0 .?u_0 type TelevisionShow
+?u_0 creator England
+?u_0 creator England .?u_1 type TelevisionShow
+?u_1 birthPlace ?u_0 .?u_1 type TelevisionShow
+?u_0 creator England .?u_0 type TelevisionShow
+?u_1 creator England .?u_1 type TelevisionShow
+?u_0 birthPlace ?u_1
+?u_0 birthPlace ?u_1 .?u_0 type TelevisionShow
+?u_0 birthPlace ?u_1 .?u_1 type TelevisionShow
+?u_0 deathPlace #ent
+?u_0 type Politician
+?u_0 deathPlace Ontario .?u_0 type Politician
+#ent monarch ?u_0
+?u_0 stylisticOrigin #ent
+Wizard_rock stylisticOrigin ?u_0
+?u_0 service Electronics_manufacturing_services
+?u_1 manufacturer ?u_0
+?u_0 service Electronics_manufacturing_services .?u_1 manufacturer ?u_0
+?u_1 service Electronics_manufacturing_services
+?u_0 placeOfBirth United_States
+?u_1 knownFor ?u_0
+?u_0 knownFor ?u_1
+?u_0 knownFor United_States
+?u_0 placeOfBirth ?u_1
+?u_1 placeOfBirth ?u_0
+?u_1 placeOfBirth United_States
+?u_1 knownFor United_States

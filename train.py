@@ -26,7 +26,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def construct_hyper_param(parser):
-    parser.add_argument("--do_train", default=True)
+    parser.add_argument("--do_train", default=False)
     parser.add_argument('--do_infer', default=True)
     parser.add_argument('--infer_loop', default=False)
 
@@ -74,7 +74,7 @@ def construct_hyper_param(parser):
 
     # 1.4 Execution-guided decoding beam-size. It is used only in test.py
     parser.add_argument('--EG',
-                        default=False,
+                        default=True,
                         help="If present, Execution guided decoding is used in test.")
     parser.add_argument('--beam_size',
                         type=int,
@@ -600,70 +600,6 @@ def tokenize_corenlp_direct_version(client, nlu1):
     return nlu1_tok
 
 
-def infer(nlu1,
-          table_name, data_table, path_db, db_name,
-          model, model_bert, bert_config, max_seq_length, num_target_layers,
-          beam_size=4, show_table=False, show_answer_only=False):
-    # I know it is of against the DRY principle but to minimize the risk of introducing bug w, the infer function introuced.
-    model.eval()
-    model_bert.eval()
-    engine = DBEngine(os.path.join(path_db, f"{db_name}.db"))
-
-    # Get inputs
-    nlu = [nlu1]
-    # nlu_t1 = tokenize_corenlp(client, nlu1)
-    nlu_t1 = tokenize_corenlp_direct_version(client, nlu1)
-    nlu_t = [nlu_t1]
-
-    tb1 = data_table[0]
-    hds1 = tb1['header']
-    tb = [tb1]
-    hds = [hds1]
-    hs_t = [[]]
-
-    wemb_n, wemb_h, l_n, l_hpu, l_hs, \
-    nlu_tt, t_to_tt_idx, tt_to_t_idx \
-        = get_wemb_bert(bert_config, model_bert, tokenizer, nlu_t, hds, max_seq_length,
-                        num_out_layers_n=num_target_layers, num_out_layers_h=num_target_layers)
-
-    prob_sca, prob_w, prob_wn_w, pr_sc, pr_sa, pr_wn, pr_sql_i = model.beam_forward(wemb_n, l_n, wemb_h, l_hpu,
-                                                                                    l_hs, engine, tb,
-                                                                                    nlu_t, nlu_tt,
-                                                                                    tt_to_t_idx, nlu,
-                                                                                    beam_size=beam_size)
-
-    # sort and generate
-    pr_wc, pr_wo, pr_wv, pr_sql_i = sort_and_generate_pr_w(pr_sql_i)
-    if len(pr_sql_i) != 1:
-        raise EnvironmentError
-    pr_sql_q1 = generate_sql_q(pr_sql_i, [tb1])
-    pr_sql_q = [pr_sql_q1]
-
-    try:
-        pr_ans, _ = engine.execute_return_query(tb[0]['id'], pr_sc[0], pr_sa[0], pr_sql_i[0]['conds'])
-    except:
-        pr_ans = ['Answer not found.']
-        pr_sql_q = ['Answer not found.']
-
-    if show_answer_only:
-        print(f'Q: {nlu[0]}')
-        print(f'A: {pr_ans[0]}')
-        print(f'SQL: {pr_sql_q}')
-
-    else:
-        print(f'START ============================================================= ')
-        print(f'{hds}')
-        if show_table:
-            print(engine.show_table(table_name))
-        print(f'nlu: {nlu}')
-        print(f'pr_sql_i : {pr_sql_i}')
-        print(f'pr_sql_q : {pr_sql_q}')
-        print(f'pr_ans: {pr_ans}')
-        print(f'---------------------------------------------------------------------')
-
-    return pr_sql_i, pr_ans
-
-
 def print_result(epoch, acc, dname):
     ave_loss, acc_sc, acc_sa, acc_wn, acc_wc, acc_wo, acc_wvi, acc_wv, acc_lx, acc_x = acc
 
@@ -679,23 +615,10 @@ def infernew(dev_loader, data_table, model, model_bert, bert_config, tokenizer, 
     model.eval()
     model_bert.eval()
 
-    ave_loss = 0
-    cnt = 0
-    cnt_sc = 0
-    cnt_sa = 0
-    cnt_wn = 0
-    cnt_wc = 0
-    cnt_wo = 0
-    cnt_wv = 0
-    cnt_wvi = 0
-    cnt_lx = 0
-    cnt_x = 0
-
-    cnt_list = []
 
     engine = DBEngine(os.path.join(path_db, f"{dset_name}.db"))
     results = []
-    count = 0;
+
     for iB, t in enumerate(dev_loader):
 
         nlu, nlu_t, sql_i, sql_q, sql_t, tb, hs_t, hds = get_fields(t, data_table, no_hs_t=True, no_sql_t=True)
@@ -764,39 +687,12 @@ def infernew(dev_loader, data_table, model, model_bert, bert_config, tokenizer, 
             # sort and generate
             pr_wc, pr_wo, pr_wv, pr_sql_i = sort_and_generate_pr_w(pr_sql_i)
 
-            # Follosing variables are just for the consistency with no-EG case.
-            pr_wvi = None  # not used
-            pr_wv_str = None
-            pr_wv_str_wp = None
-            loss = torch.tensor([0])
+
 
         pr_sql_q1 = generate_sql_q(pr_sql_i, tb)
         pr_sql_q = [pr_sql_q1]
 
-        try:
-            pr_ans, _ = engine.execute_return_query(tb[0]['id'], pr_sc[0], pr_sa[0], pr_sql_i[0]['conds'])
-        except:
-            pr_ans = ['Answer not found.']
-            pr_sql_q = ['Answer not found.']
-
-        yes = True
-        if yes:
-            print(f'Q: {nlu[0]}')
-            print(f'A: {pr_ans[0]}')
-            print(f'SQL: {pr_sql_q}')
-
-        else:
-            print(f'START ============================================================= ')
-            print(f'{hds}')
-            if yes:
-                print(engine.show_table(table_name))
-            print(f'nlu: {nlu}')
-            print(f'pr_sql_i : {pr_sql_i}')
-            print(f'pr_sql_q : {pr_sql_q}')
-            print(f'pr_ans: {pr_ans}')
-            print(f'---------------------------------------------------------------------')
-
-        return pr_sql_i, pr_ans
+        return pr_sql_q
 
 
 if __name__ == '__main__':
@@ -844,7 +740,7 @@ if __name__ == '__main__':
         for epoch in range(args.tepoch):
             # train
             acc_train=None
-            '''acc_train, aux_out_train = train(train_loader,
+            acc_train, aux_out_train = train(train_loader,
                                              train_table,
                                              model,
                                              model_bert,
@@ -860,7 +756,7 @@ if __name__ == '__main__':
                                              dset_name='train')
 
             # check DEV
-            '''
+
             with torch.no_grad():
                 acc_dev, results_dev, cnt_list = test(dev_loader,
                                                       dev_table,
@@ -926,9 +822,9 @@ if __name__ == '__main__':
                 beam_size=1, show_table=False, show_answer_only=False
             )
             '''
-            pr_sql_i, pr_ans = infernew(
+            pr_sql_i = infernew(
                 dev_loader,
-                dev_data,
+                dev_table,
                 model,
                 model_bert,
                 bert_config,

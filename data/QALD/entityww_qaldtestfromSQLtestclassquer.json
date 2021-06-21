@@ -1,0 +1,36 @@
+[
+    {
+        "entities": [
+            {
+                "surface": [
+                    0,
+                    14
+                ],
+                "uris": [
+                    {
+                        "confidence": 0.9996781825982756,
+                        "uri": "http://dbpedia.org/resource/Salt_Lake_City"
+                    }
+                ]
+            }
+        ],
+        "question": "What is the time zone of Salt Lake City?",
+        "relations": [
+
+
+
+            {
+                "surface": [
+                    0,
+                    3
+                ],
+                "uris": [
+                    {
+                        "confidence": 0.3,
+                        "uri": "http://dbpedia.org/ontology/timeZone"
+                    }
+                ]
+            }
+        ]
+    }
+]
