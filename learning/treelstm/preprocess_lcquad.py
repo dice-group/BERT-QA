@@ -166,6 +166,36 @@ def split(data, parser=None):
     if isinstance(data, str):
         with open(data, encoding="utf8") as datafile:
             dataset = json.load(datafile)
+    else:
+        dataset = data
+    a_list = []
+    b_list = []
+    id_list = []
+    sim_list = []
+
+    for item in tqdm(dataset):
+        i = item["id"]
+        a = item["question"]
+        for query in item["generated_queries"]:
+            a, b = generalize_question(a, query["query"], parser)
+
+            # Empty query should be ignored
+            if len(b) < 5:
+                continue
+            sim = str(2 if query["correct"] else 1)
+
+            #id_list.append(0 + '\n')
+            a_list.append(a.encode('ascii', 'ignore').decode('ascii') + '\n')
+            b_list.append(b.encode('ascii', 'ignore').decode('ascii') + '\n')
+            sim_list.append("2" + '\n')
+
+    return a_list, b_list, sim_list
+
+def splittest(data, parser=None):
+
+    if isinstance(data, str):
+        with open(data, encoding="utf8") as datafile:
+            dataset = json.load(datafile)
             #raw_data = json.load(datafile)
     else:
         dataset = data
@@ -237,6 +267,7 @@ def split(data, parser=None):
             simfile.write(sim_list[i])
 
     return a_list, b_list, sim_list
+
 
 
 def save_split(dst_dir, a_list, b_list, sim_list):

@@ -1,4 +1,4 @@
-import bert.tokenization as tokenization
+import bertclass.tokenization as tokenization
 from sqlnet.dbengine import DBEngine
 import json
 import torch

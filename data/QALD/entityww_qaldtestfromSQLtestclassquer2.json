@@ -1,0 +1,79 @@
+[
+    {
+        "entities": [
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/resource/Time_zone"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/resource/Salt_Lake_City"
+                    }
+                ]
+            }
+        ],
+        "question": "What is the time zone of Salt Lake City?",
+        "relations": [
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/property/timeZone"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/ontology/timeZone"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/property/time"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/ontology/time"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/property/zone"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/property/cities"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/ontology/city"
+                    }
+                ]
+            },
+            {
+                "uris": [
+                    {
+                        "uri": "http://dbpedia.org/property/city"
+                    }
+                ]
+            }
+        ]
+    }
+]

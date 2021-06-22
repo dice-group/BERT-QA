@@ -4,7 +4,7 @@ import torch
 from torch.autograd import Variable as Var
 
 from learning.treelstm.utils import map_label_to_target
-from bert import BertClass
+from bertclass import BertClass
 
 class Trainer(object):
     def __init__(self, args, model, criterion, optimizer):

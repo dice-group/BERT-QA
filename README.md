@@ -14,5 +14,9 @@ the desired results from the underlying knowledge graphs.
 QA systems aim to build natural languageprocessing (NLP) pipelines that apply syntactic
 and semantic analysis to the natural language question to generate the SPARQL query. 
 The NLP pipeline components include parts-of-speech tagging, named-entity recognition, 
-dependency parsing, etc.
+dependency parsing, etc. 
+ 
+# To get SQL queries
+
+
 

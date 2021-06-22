@@ -71,6 +71,7 @@ class Earl:
         else:
             return None, None
 
+
     def __parse(self, dataset, name, top):
         output = []
         for item in dataset[name]:
@@ -84,3 +85,15 @@ class Earl:
                 surface = ""
             output.append(LinkedItem(surface, uris[:top]))
         return output
+   
+    '''
+    def __parse(self, dataset, name, top):
+        output = []
+        for item in dataset[name]:
+            uris = []
+            for uri in item["uris"]:
+                uris.append(Uri(uri["uri"], self.parser, 1.0))
+            surface = ""
+            output.append(LinkedItem(surface, uris[:top]))
+        return output
+    '''

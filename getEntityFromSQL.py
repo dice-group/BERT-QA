@@ -298,7 +298,7 @@ if __name__ == "__main__":
 
 
 
-    with open('data/QALD/entityww_qaldtestfromSQLtestclassquer.json', "w") as data_file:
+    with open('data/QALD/entityww_qaldtestfromSQLtestclassquer2.json', "w") as data_file:
         json.dump(linked_data, data_file, sort_keys=True, indent=4, separators=(',', ': '))
 
 

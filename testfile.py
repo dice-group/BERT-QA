@@ -43,7 +43,7 @@ import pickle
 from qald_test import NumpyEncoder
 from testmain import testmain
 from sklearn.feature_extraction.text import CountVectorizer
-from predictMB import getdoc
+from predictMB import Predict
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
@@ -62,7 +62,7 @@ def rank(question, generated_queries ,parser):
                       "generated_queries": [{"query": " .".join(query["where"]), "correct": False} for query in
                                             generated_queries]}]
         output_dir = "./output/"
-        preprocess_lcquad.split(json_data, parser)
+        preprocess_lcquad.splittest(json_data, parser)
         #preprocess_lcquad.save_split(output_dir, *preprocess_lcquad.split(json_data, parser))
         #preprocess_lcquad.parse(output_dir)
     test_dataset = QGDataset(output_dir, 2)
@@ -119,50 +119,12 @@ def generate_query(question, entities, relations, question_type, kb, parser, h1_
     return valid_walks, question_type
 
 
-def sort_query(linker, kb, parser, qapair, model, force_gold=True):
+def sort_query(linker, kb, parser, qapair, model, predictclass, force_gold=True):
     ask_query = False
     count_query = False
-
-    ###
-    filenametrain = './lcqald_question_type_train.csv'
-
-    filenametest = './lcqald_question_type_test.csv'
-    X_train = getdoc(filenametrain)
-    X_test = getdoc(filenametest)
-
-    with open("D:/downloads/QA/lcqald_question_type_test.csv", "rt") as f:
-        reader = csv.reader(f, delimiter=':')
-        rows = list(reader)
-
-    y_test = [row[1] for row in rows]
-
-    with open("D:/downloads/QA/lcqald_question_type_train.csv", "rt") as f:
-        reader = csv.reader(f, delimiter=':')
-        rows = list(reader)
-
-    y_train = [row[1] for row in rows]
-
-    # X_train, X_test, y_train, y_test = train_test_split(df['Consumer_complaint_narrative'], df['Product'], random_state = 0)
+    question_type = predictclass.getresult(qapair.question.text)
     count_vect = CountVectorizer()
-    X_train_counts = count_vect.fit_transform(X_train)
-    tfidf_transformer = TfidfTransformer()
-    X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
-
-    clf = MultinomialNB().fit(X_train_tfidf, y_train)
-
-    with open('mb_classifier', 'wb') as picklefile:
-        pickle.dump(clf, picklefile)
-
-    with open('mb_classifier', 'rb') as training_model:
-        model = pickle.load(training_model)
-
-    ###
-
-
     question = qapair.question.text
-    count_vect = CountVectorizer()
-    #question_type = model.predict(count_vect.transform["What is the time zone of Salt Lake City?"])
-    question_type = 'normal'
     if question_type == 'count':
         question_type = 2
     elif question_type == 'boolean':
@@ -284,7 +246,7 @@ def sort_query(linker, kb, parser, qapair, model, force_gold=True):
 if __name__ == "__main__":
     logger = logging.getLogger(__name__)
     utility.setup_logging()
-
+    predictclass = Predict()
     ds = Qald(Qald.qald_7)
     ds.load()
     ds.parse()
@@ -319,7 +281,7 @@ if __name__ == "__main__":
             output_row["answer"] = "-no_answer"
         else:
             #result, where, question_type, type_confidence, precision, recall = o.sort_query(linker, ds.parser.kb, ds.parser, qapair, question_type_classifier, True)
-            sparql, type = sort_query(linker, ds.parser.kb, ds.parser, qapair, model, True)
+            sparql, type = sort_query(linker, ds.parser.kb, ds.parser, qapair, model, predictclass, True)
 
             #output_row["answer"] = answer
             output_row["generated_queries"] = sparql
