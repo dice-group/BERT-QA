@@ -1,0 +1,1 @@
+{"query": "SELECT max(frequent flyer program) FROM 102", "table_id": "102", "nlu": "Which frequent flyer program has the most airlines?"}

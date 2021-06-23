@@ -123,7 +123,6 @@ def sort_query(linker, kb, parser, qapair, model, predictclass, force_gold=True)
     ask_query = False
     count_query = False
     question_type = predictclass.getresult(qapair.question.text)
-    count_vect = CountVectorizer()
     question = qapair.question.text
     if question_type == 'count':
         question_type = 2
